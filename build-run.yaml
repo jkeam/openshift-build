@@ -2,6 +2,8 @@ apiVersion: shipwright.io/v1beta1
 kind: BuildRun
 metadata:
   name: app-buildrun
+  labels:
+    build.shipwright.io/name: app-build
 spec:
   build:
     name: app-build
